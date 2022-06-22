@@ -7,7 +7,7 @@ return function(name, root_dir)
         root_dir = root_dir,
         homepage = "https://github.com/znck/grammarly",
         languages = {},
-        installer = npm.packages { "grammarly-languageserver" },
+        installer = npm.packages { "grammarly-languageserver@0.0.3" },
         default_options = {
             cmd_env = npm.env(root_dir),
         },
